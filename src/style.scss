@@ -1,0 +1,105 @@
+$bg-color: #ded7ff;
+$em-color: rgb(87, 70, 87);
+$text-color: rgb(52, 52, 52);
+body {
+    background-color: $bg-color;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    background-color: em-color;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: text-color;
+    font-size: 12px;
+}
+
+#bord-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+#show-turn {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 26px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    &.black {
+        background-color: black;
+        color: gray;
+    }
+    &.white {
+        background-color: white;
+        color: gray;
+    }
+}
+
+#game-bord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 67, 4);
+    width: 482px;
+    height: 482px;
+    .stone-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+    }
+    .stone-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgb(133, 133, 133);
+        .clickable {
+            cursor: pointer;
+        }
+        .stone {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            &.none {
+                display: none;
+            }
+            &.white {
+                display: block;
+                background-color: white;
+            }
+            &.black {
+                display: block;
+                background-color: black;
+            }
+        }
+    }
+}

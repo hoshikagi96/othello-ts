@@ -1,0 +1,36 @@
+{
+    "name": "othello-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack serve --mode development --config webpack.config.js",
+        "build": "webpack --config webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hoshikagi96/othello-ts.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hoshikagi96/othello-ts/issues"
+    },
+    "homepage": "https://github.com/hoshikagi96/othello-ts#readme",
+    "devDependencies": {
+        "css-loader": "^6.7.2",
+        "mini-css-extract-plugin": "^2.6.1",
+        "sass": "^1.56.1",
+        "sass-loader": "^13.2.0",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.8.4",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    },
+    "dependencies": {
+        "clean-webpack-plugin": "^4.0.0",
+        "webpack-fix-style-only-entries": "^0.6.1"
+    }
+}
